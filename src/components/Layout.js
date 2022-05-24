@@ -11,7 +11,7 @@ export default function Layout({ children }) {
             { children }
         </div>
         <footer>
-            <p>LOCATION <br/> Tampere, Finland</p>
+            <p>LOCATION <br/> Tampere, Finland</p> 
         </footer>
     </div>
   )
