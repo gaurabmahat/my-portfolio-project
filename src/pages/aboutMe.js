@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 import Layout from '../components/Layout'
+import * as styles from "../styles/aboutMe.module.css"
 
 export default function AboutMe({ data }) {
   const message = data.markdownRemark
@@ -8,8 +9,10 @@ export default function AboutMe({ data }) {
   return (
     <Layout>
       <div>
-        <h1>About Me</h1>
-        <div dangerouslySetInnerHTML={{__html: message.html}}></div>
+        <div className={styles.h1TextDiv}>
+          <h1 className={styles.h1}>About Me</h1>
+        </div>
+        <div dangerouslySetInnerHTML={{ __html: message.html }}></div>
       </div>
     </Layout>
   )

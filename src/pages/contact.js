@@ -6,7 +6,9 @@ export default function Contact() {
   return (
     <Layout>
       <div>
-        <h1>Contact Me</h1>
+        <div className={styles.h1TextDiv}>
+          <h1 className={styles.h1}>Contact Me</h1>
+        </div>
         <p>You can contact me through gmail at:-
           <a className={styles.a} href="mailto:gaurab.mahat.work@gmail.com" target="_blank" rel="noopener noreferrer">
             gaurab.mahat.work@gmail.com

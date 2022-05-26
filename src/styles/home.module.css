@@ -6,9 +6,9 @@
 }
 
 .homeMessage {
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
-.gColor {
-    color:#00bfff
+.name {
+    color: rgb(157, 238, 155);
 }
