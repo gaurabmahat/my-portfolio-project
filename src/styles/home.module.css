@@ -5,6 +5,10 @@
     align-items: center;
 }
 
-.html {
+.homeMessage {
     font-size: 2em;
+}
+
+.gColor {
+    color:#00bfff
 }
