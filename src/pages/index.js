@@ -5,14 +5,17 @@ import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
-  console.log(data)
   const image = data.image.childImageSharp
-  const message = data.message
 
   return (
     <Layout>
       <section className={styles.header}>
-        <div className={styles.html} dangerouslySetInnerHTML={{ __html: message.html }} />
+        <div className={styles.homeMessage}>
+          <p>Hi, Y'all,</p>
+          <h1>I am <span className={styles.name}>Gaurab</span>,</h1>
+          <h4>I am learning to be a Developer during the day</h4>
+          <p>& bookworm during the nights.</p>
+        </div>
         {/* <GatsbyImage
           image={image.gatsbyImageData}
           alt="my image"
@@ -29,8 +32,5 @@ export const query = graphql`
         gatsbyImageData(layout: CONSTRAINED)
       }
     }
-    message: markdownRemark(frontmatter: {title: {eq: "Home page message"}}) {
-      html
-    }
   }
-`
+` 
