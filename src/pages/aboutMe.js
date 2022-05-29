@@ -12,7 +12,7 @@ export default function AboutMe({ data }) {
         <div className={styles.h1TextDiv}>
           <h1 className={styles.h1}>About Me</h1>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: message.html }}></div>
+        <div className={styles.body} dangerouslySetInnerHTML={{ __html: message.html }}></div>
       </div>
     </Layout>
   )

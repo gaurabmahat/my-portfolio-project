@@ -20,6 +20,43 @@
     }
 }
 
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form p label {
+    font-size: 1.5em;
+}
+
+.inputText {
+    display: inline-block;
+    color: black;
+    font-size: 0.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 19em;
+    height: 1.5em;
+}
+
+.textArea {
+    display: inline-block;
+    color: black;
+    font-size: 0.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 19em;
+    height: 5em;
+}
+
+.form p button {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: "Rockwell";
+    font-weight: 500;
+    background-color: #B73EFB;
+    padding: 6px 7px 6px 7px;
+    border-radius: 10px;
+}
+
 .a {
     text-decoration: underline;
 }
