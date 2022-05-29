@@ -13,22 +13,24 @@ export default function Contact() {
           <form
             name="contact"
             method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
           >
             <input type="hidden" name="form-name" value="contact" />
             <p>
               <label>Name: <br />
-                <input className={styles.inputText} type="text" name="name" placeholder='John Wick'></input></label>
+                <input className={styles.inputText} type="text" name="name" placeholder='John Wick' required></input></label>
             </p>
             <p>
               <label>Email: <br />
-                <input className={styles.inputText} type="email" name="email" placeholder='johnwick@example.com'></input></label>
+                <input className={styles.inputText} type="email" name="email" placeholder='johnwick@example.com' required></input></label>
             </p>
             <p>
               <label>Message: <br />
-                <textarea className={styles.textArea} name="message" placeholder='Message...'></textarea></label>
+                <textarea className={styles.textArea} name="message" placeholder='Message...' required></textarea></label>
             </p>
+            <div data-netlify-recaptcha="true"></div>
             <p>
               <button type="submit">Send</button>
             </p>
