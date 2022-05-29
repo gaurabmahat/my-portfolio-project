@@ -9,16 +9,25 @@ export default function Contact() {
         <div className={styles.h1TextDiv}>
           <h1 className={styles.h1}>Contact Me</h1>
         </div>
-        <p>You can contact me through gmail at:-
-          <a className={styles.a} href="mailto:gaurab.mahat.work@gmail.com" target="_blank" rel="noopener noreferrer">
-            gaurab.mahat.work@gmail.com
-          </a>
-          .</p>
-        <p>You can also visit my LinkedIn page at:-
-          <a className={styles.a} href="https://www.linkedin.com/in/gaurab-mahat-937299191/" target="_blank" rel="noopener noreferrer">
-            https://www.linkedin.com/in/gaurab-mahat-937299191/
-          </a>
-          .</p>
+        <div className={styles.form}>
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Name: <br />
+                <input className={styles.inputText} type="text" name="name"></input></label>
+            </p>
+            <p>
+              <label>Email: <br />
+                <input className={styles.inputText} type="email" name="email"></input></label>
+            </p>
+            <p>
+              <label>Message: <br />
+                <textarea className={styles.textArea} name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+        </div>
       </div>
     </Layout>
   )
